@@ -14,6 +14,7 @@
 
 body {
   margin: auto;
+  overflow-wrap: anywhere;
 }
 
 figure {
@@ -21,8 +22,14 @@ figure {
   padding-block-end: 3rem;
 }
 
-em {
-  font-family: cursive;
+data::first-letter {
+  font-size: 1.618em;
+}
+
+@media (min-width: 50em) {
+  data {
+    letter-spacing: 0.618em;
+  }
 }
 
 blockquote {
